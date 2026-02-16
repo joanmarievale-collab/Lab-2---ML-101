@@ -1,0 +1,218 @@
+{
+  "lab": {
+    "title": "ML 101 Learning",
+    "description": "A quiz-based lab where users test their understanding of Machine Learning concepts through an interactive API-driven interface.",
+    "content": "Explore the core concepts of Machine Learning, including types of learning, ML pipeline, model evaluation, and deployment, by answering a series of engaging questions.",
+    "type": "learning",
+    "api_url": "http://54.242.135.26:8001",
+    "points": 20
+  },
+  "contents": [
+    {
+      "content": "<h2>Introduction to Machine Learning</h2><p><b>Machine Learning</b>, often abbreviated as ML is a branch of Artificial Intelligence (AI) that works on algorithm developments and statistical models that allow computers to learn from data and make predictions or decisions without being explicitly programmed. Hence, in simpler terms, machine learning allows computers to learn from data and make decisions or predictions without being explicitly programmed to do so. Essentially, machine learning algorithms learn patterns and relationships from data, allowing them to generalize from instances and make predictions or conclusions on new and uncovered data.</p><h2>What You Will Learn</h2><ul><li>How does Machine Learning Work?</li><li>Stages of Machine Learning</li><li>Types of Machine Learning</li><li>Importance of Machine Learning</li><li>Machine Learning Pipeline</li><li>Python Libraries in Machine Learning</li><li>Applications of Machine Learning</li><li>Hands-on Coding Exercises</li></ul><h2>How does ML work?</h2><p>Machine Learning is a subset of Artificial Intelligence that uses datasets to gain insights from it and predict future values. It uses a systematic approach to achieve its goal going through various steps such as data collection, preprocessing, modeling, training, tuning, evaluation, visualization, and model deployment. This technique is widely used in various domains such as finance, health, marketing, education, etc.</p><div class='center'><img src='https://www.labellerr.com/blog/content/images/2022/12/ml.process-1.webp' alt='MLWorks' width='500px'></div><h3>Stages of Machine Learning</h3><p>A detailed sequential process of Machine Learning includes some set of steps of phases which are as –</p><div class='center'><img src='https://www.tutorialspoint.com/machine_learning/images/sequential-process-flow-of-machine-learning.png' alt='Stages' width='500px'></div><ul><li><b>Data collection:</b>Data collection is an initial step in the process of machine learning. Data is a fundamental part of machine learning, the quality and quantity of your data can have direct consequences for model performance. Different sources such as databases, text files, pictures, sound files, or web scraping may be used for data collection. Data needs to be prepared for machine learning once it has been collected. This process is to organize the data in an appropriate format, such as a CSV file or database, and make sure that they are useful for solving your problem.</li><li><b>Data pre-processing:</b>Pre-processing of data is a key step in the process of machine learning. It involves deleting duplicate data, fixing errors, managing missing data either by eliminating or filling it in, and adjusting and formatting the data. Pre-processing improves the quality of your data and ensures that your machine-learning model can read it right. The accuracy of your model may be significantly improved by this step.</li><li><b>Choosing the right model:</b>The next step is to select a machine learning model; once data is prepared then we apply it to ML Models like Linear regression, decision trees, and Neural Networks that may be selected to implement. The selection of the model generally depends on what kind of data you're dealing with and your problem. The size and type of data, complexity, and computational resources should be taken into account when choosing a model to apply.</li><li><b>Training the model:</b>The next step is to train it with the data that has been prepared after you have chosen a model. Training is about connecting the data to the model and enabling it to adjust its parameters to predict output more accurately. Overfitting and underfitting must be avoided during the training.</li><li><b>Evaluating the model:</b>It is important to assess the model's performance before deployment as soon as a model has been trained. This means that the model has to be tested on new data that they haven't been able to see during training. Accuracy in classifying problems, precision and recall for binary classification problems, as well as mean error squared with regression problems, are common metrics to evaluate the performance of a model.</li><li><b>Hyperparameter tuning and optimization: </b>You may need to adjust its hyperparameters to make it more efficient after you've evaluated the model. Grid searches, where you try different combinations of parameters, and cross-validation, where you divide your data into subsets and train your model on each subset, to ensure that it performs well on different data sets, are techniques for hyperparameter tuning.</li><li><b>Predictions and deployment:</b>As soon as the model has been programmed and optimized, it will be ready to estimate new data. This is done by adding new data to the model and using its output for decision-making or other analysis. The deployment of this model involves its integration into a production environment where it is capable of processing real-world data and providing timely information.</li></ul><h2>Types of Machine Learning</h2><p>Machine Learning can be divided into four parts: Supervised, Semi-supervised, Unsupervised, and Reinforcement Learning. We can discuss these in detail:</p><ul><h4>Supervised Learning</h4><p><b>Supervised Learning</b> is a type of machine learning where a model is trained on labeled data—meaning each input is paired with the correct output. the model learns by comparing its predictions with the actual answers provided in the training data. Over time, it adjusts itself to minimize errors and improve accuracy. The goal of supervised learning is to make accurate predictions when given new, unseen data. For example, if a model is trained to recognize handwritten digits, it will use what it learned to correctly identify new numbers it hasn’t seen before.Supervised learning can be applied in various forms, including supervised learning classification and supervised learning regression, making it a crucial technique in the field of artificial intelligence and supervised data mining.</p><div class='center'><img src='https://media.geeksforgeeks.org/wp-content/uploads/20241022160725494723/supervised-machine-learning.webp' alt='Supervised Learning Overview' width='450px'></div><h4>Unsupervised Learning</h4><p><b>Unsupervised learning</b> is a type of machine learning that works with data that has no labels or categories. The main goal is to find patterns and relationships in the data without any guidance.In this approach, the machine analyzes unorganized information and groups it based on similarities, patterns, or differences. Unlike supervised learning, there is no teacher or training involved. The machine must uncover hidden structures in the data on its own.For example, unsupervised learning can analyze animal data and group the animals by their traits and behavior. These groups could correspond to different species, making it possible to organize the animals without pre-existing labels.</p><div class='center'><img src='https://media.geeksforgeeks.org/wp-content/uploads/20231121154719/Unsupervised-learning.png' alt='Unsupervised Learning Overview' width='450px'></div><h4>Semi-Supervised Learning</h4><p><b>Semi-supervised learning</b> is a type of machine learning that falls in between supervised and unsupervised learning. It is a method that uses a small amount of labeled data and a large amount of unlabeled data to train a model. The goal of semi-supervised learning is to learn a function that can accurately predict the output variable based on the input variables, similar to supervised learning. However, unlike supervised learning, the algorithm is trained on a dataset that contains both labeled and unlabeled data.Semi-supervised learning is particularly useful when there is a large amount of unlabeled data available, but it’s too expensive or difficult to label all of it. </p><div class='center'><img src='https://media.geeksforgeeks.org/wp-content/uploads/20220805171912/ProposedSemisupervisedLearningProcess.jpg' alt='Semi-supervised Learning Overview' width='450px'></div><h4>Reinforcement Learning</h4><p><b>Reinforcement Learning (RL)</b> is a branch of machine learning that focuses on how agents can learn to make decisions through trial and error to maximize cumulative rewards. RL allows machines to learn by interacting with an environment and receiving feedback based on their actions. This feedback comes in the form of rewards or penalties. Reinforcement Learning revolves around the idea that an agent (the learner or decision-maker) interacts with an environment to achieve a goal. The agent performs actions and receives feedback to optimize its decision-making over time.</p><div class='center'><img src='https://media.geeksforgeeks.org/wp-content/uploads/20250224161500821503/Reinforcement-Learning_.webp' alt='Reinforcement Learning Overview' width='450px'></div></ul><h2>Importance of Machine Learning</h2><p>Machine Learning is important in automation, extracting insights from data, and decision-making processes. It has its significance due to the following reasons:</p><ul><li><b>Data processing:</b> The main reason machine learning has become so important is to process and make sense of large amounts of data. Traditional methods of data analysis are becoming insufficient given the explosion of digital information coming from social media, sensors, and other sources. This data is important and reveals hidden patterns and provides invaluable insight for decision-making processes, which can be exploited by machine learning algorithms.</li><li><b>Data-driven insights:</b> Machine learning algorithms can find patterns, trends, and correlations in big data sets that humans cannot. Better decisions and forecasts can be made with this information.</li><li><b>Automation:</b> Machine learning automates manual activities, saving time and decreasing errors by learning from data and improving over time, ML algorithms can perform previously manual tasks, freeing humans to focus on more complex and creative tasks. This not only increases efficiency but also opens up new possibilities for innovation. Data entry, classification, and anomaly detection can be automated with machine learning.</li><li><b>Personalization:</b> User preferences and behavior can be analyzed using machine learning algorithms to generate personalized recommendations and experiences. It is most widely used in social media like e-commerce, and streaming services by providing a way to increase user engagement and satisfaction.</li><li><b>Predictive analytics:</b> Models of machine learning may be trained to predict subsequent outcomes based on past data. This is useful for different applications like sales forecasts, risk management, and demand planning.</li><li><b>Optimization:</b> Machine learning algorithms optimize systems and processes for efficiency and performance. Their smart grid optimizations include supply chain logistics, resource allocation, and energy consumption.</li><li><b>Pattern recognition:</b> Machine learning is useful in image, audio, and natural language processing because it can recognize complicated data patterns easily and timely.</li><li><b>Fraud detection and cybersecurity:</b> Machine Learning algorithms can detect patterns of fraudulent behavior for financial transactions by detecting and mitigating security threats in real time, it is used to enhance cybersecurity as well.</li><li><b>Continuous improvement:</b> It is possible to train and update machine learning models with new data at regular intervals, enabling them to adapt to changes in the environment as well as improve over time.</li></ul><h2>Machine Learning Pipeline</h2><p>Machine learning is fundamentally built upon data, which serves as the foundation for training and testing models. Data consists of inputs (features) and outputs (labels). A model learns patterns during training and is tested on unseen data to evaluate its performance and generalization. In order to make predictions, there are essential steps through which data passes in order to produce a machine learning model that can make predictions.</p><ul><h4>1. Machine Learning Lifecycle</h4><p>Machine learning lifecycle is a process that guides development and deployment of machine learning models in a structured way. It consists of various steps. Each step plays a crucial role in ensuring the success and effectiveness of the machine learning model. By following the machine learning lifecycle we can solve complex problems, can get data-driven insights and create scalable and sustainable models.</p><div class='center'><img src='https://media.geeksforgeeks.org/wp-content/uploads/20240307212902/Screenshot-2024-03-07-212513.png' alt='ML Pipeline' width='500px'></div><h4>2. Data Cleaning</h4><p>Data cleaning is a important step in the machine learning (ML) pipeline as it involves identifying and removing any missing duplicate or irrelevant data. The goal of data cleaning is to ensure that the data is accurate, consistent and free of errors as raw data is often noisy, incomplete and inconsistent which can negatively impact the accuracy of model and its reliability of insights derived from it. Professional data scientists usually invest a large portion of their time in this step because of the belief that</p><p>The process begins by thorough understanding data and its structure to identify issues like missing values, duplicates and outliers. Performing data cleaning involves a systematic process to identify and remove errors in a dataset. The following are essential steps to perform data cleaning.</p><div class='center'><img src='https://media.geeksforgeeks.org/wp-content/uploads/datacleaning.jpg' alt='Cleaning' width='500px'></div><h3>3. Feature Scaling</h3><p>Feature Scaling is a technique to standardize the independent features present in the data. It is performed during the data pre-processing to handle highly varying values. If feature scaling is not done then machine learning algorithm tends to use greater values as higher and consider smaller values as lower regardless of the unit of the values. For example it will take 10 m and 10 cm both as same regardless of their unit. In this article we will learn about different techniques which are used to perform feature scaling.</p><h3>4. Data Preprocessing in Python</h3><p>Data preprocessing is a important step in the data science transforming raw data into a clean structured format for analysis. It involves tasks like handling missing values, normalizing data and encoding variables. Mastering preprocessing in Python ensures reliable insights for accurate predictions and effective decision-making. Pre-processing refers to the transformations applied to data before feeding it to the algorithm.</p><p>The process begins by thorough understanding data and its structure to identify issues like missing values, duplicates and outliers. Performing data cleaning involves a systematic process to identify and remove errors in a dataset. The following are essential steps to perform data cleaning.</p><div class='center'><img src='https://media.geeksforgeeks.org/wp-content/cdn-uploads/ml.png' alt='Processing' width='500px'></div><p><b>Steps in Data Preprocessing</b></p><ul><li><b>Step 1:</b> Import the necessary libraries</li><li><b>Step 2:</b> Load the dataset</li><p>You can download dataset from<li><b>Step 3:</b> Check the data info, null values, and statistical analysis</li><ul><h2>Python Libraries in Machine Learning</h2><p>Python libraries are collection of codes and functions that can be used in a program for a specific task. They are generally used to ease the process of programming when the tasks are repetitive and complex.</p><p>As you know Machine Learning is an interdisciplinary field where each algorithm is developed on combining programming and mathematics. Instead of manually coding the complete algorithm with mathematical and statistical formulas, using libraries would make the task easy.</p><p>Python is the most popular programming language especially for implementing machine learning because of its simplicity vast collection of libraries, and easiness. Some popular Python machine learning libraries are as follows:</p><ul><h3>1. NumPy</h3><p>NumPy is a general purpose array and matrix processing package used for scientific computing and to perform a variety of mathematical operations like linear algebra, Fourier transform and others. It provides a high performance multi-dimensional array object and tools , to manipulate the matrices for the improvement of machine learning algorithms. It is a critical component of the Python machine learning ecosystem, as it provides the underlying data structure and numerical operations required for many machine learning algorithms.</p><p>By using NumPy, we can perform the following important operations:</p><ul><li>Mathematical and logical operations on arrays.</li><li>Fourier transformation</li><li>Operations associated with linear algebra.</li></ul><p>We can also see NumPy as the replacement of MATLAB because NumPy is mostly used along with Scipy (Scientific Python) and Mat-plotlib (plotting library).</p><p><b>Installation and Execution</b></p><p>If you are using Anaconda distribution, then no need to install NumPy separately as it is already installed with it. You just need to import the package into your Python script.</p><p>On the other hand, if you are using standard Python distribution then NumPy can be installed using popular python package installer, pip.</p><h4>Pandas</h4><p>Pandas is a powerful library for data manipulation and analysis. This library is not exactly used in machine learning algorithms but is used in the prior step i.e., for data preparation. It functions based on two data structures: Series(one-dimensional) and Data frames(two-dimensional). This allows it to handle vast typical use cases in various sectors like Finance, Business, and Health.</p><p>With the help of Pandas, in data processing, we can accomplish the following five steps:</p><ul><li>Load</li><li>Prepare</li><li>Manipulate</li><li>Model</li><li>Analyze</li></ul><p><b>Installation and Execution</b></p><p>If you are using Anaconda distribution, then no need to install Pandas separately as it is already installed with it. You just need to import the package into your Python script </p><p>On the other hand, if you are using standard Python distribution then Pandas can be installed using popular python package installer, pip.<h4>SciPy</h4><p>SciPy is an open-source library that performs scientific computing on large datasets. It is easy to use and fast to execute data visualization and manipulation tasks. It consists of modules used for the optimization of algorithms and to perform operations like integration, linear algebra, or signal processing. SciPy is built on NumPy but extends its functionality by performing complex tasks like numerical algorithms and algebraic functions.</p><p><b>Installation and Execution</b></p><p>If you are using Anaconda distribution, then no need to install SciPy separately as it is already installed with it. You just need to use the package into your Python script. </p><p>On the other hand, if you are using standard Python distribution and having NumPy, then SciPy can be installed using a popular python package installer, pip.<h4>Scikit-learn</h4><p>Scikit-learn a popular open-source library built on NumPy and SciPy, is used to implement machine learning models and statistical modeling. It supports supervised and unsupervised learning. It provides various tools for implementing data pre-processing, feature selection, model selection, model evaluation, and many other tasks.</p>",
+      "type": "narrative",
+      "content_id": 1,
+      "page": 1,
+      "order": 1,
+      "progress": 40,
+      "depends_on_finish_lab": false
+    },
+    {
+      "content": " <p>The following are some features of Scikit-learn that makes it so useful:</p><ul><li>It is built on NumPy, SciPy, and Matplotlib.</li><li>It is an open source and can be reused under BSD license.</li><li>It is accessible to everybody and can be reused in various contexts.</li><li>Wide range of machine learning algorithms covering major areas of ML like classification, clustering, regression, dimensionality reduction, model selection etc. can be implemented with the help of it.</li></ul><p><b>Installation and Execution</b></p><p>If you are using Anaconda distribution, then there is no need to install Scikit-learn separately as it is already installed with it. You just need to use the package into your Python script.</p><p>On the other hand, if you are using standard Python distribution and having NumPy and SciPy, then Scikit-learn can be installed using the popular python package installer, pip.</p><h4>PyTorch</h4><p>PyTorch is an open-source Python library based on Torch library, generally used for developing deep neural networks. It is based on intuitive Python and can dynamically define computational graphs. PyTorch is particularly useful for researchers and developers who need a flexible and powerful deep learning framework.</p><p><b>Installation and Execution</b></p><p>For Python 3.8 or later and CPU plateform on Windows operating system, you can use the following command to install PyTorch (torch, torchvision and torchaudio)</p><p>You can refer to the to following link for installation of PyTorch with more options https://pytorch.org/get-started/locally/</p><h4>Tensorflow</h4><p>Tensorflow is one of the most known software libraries developed by Google to implement machine learning and deep learning tasks. The creation of computational graphs and efficient execution on various hardware platforms is made easier with this. It is widely used for the development of tasks like natural language processing, image recognition and handwriting recognition.</p><p><b>Installation and Execution</b></p><p>For CPU platform on Windows operating system, you can use the following command to install TensorFlow using pip</p><p>You can refer to the to the following link for installation of TensorFlow with more options https://www.tensorflow.org/install/pip</p><h4>Keras</h4><p>Keras is an high level neural network library that creates deep learning models. It runs on top of TensorFlow, CNTK, or Theano. It provides a simple and intuitive API for building and training deep learning models, making it an excellent choice for beginners and researchers. Keras is one of the popular library as it allows for easy and fast prototyping.</p><p><b>Installation and Execution</b></p><p>For CPU platform on Windows operating system, use the following to install Keras using pip</p><h4>Matplotlib</h4><p>Matplotlib is a popular plotting library usually used for data visualization, to create graphs, plots, histograms and bar charts. It provides tools and functions for data analysis, exploration and presentation tasks.</p><p><b>Installation and Execution</b></p><p>We can use the following line of script to install Matplotlib using pip. Most of the matplotlib utilities lies under the pyplot submodule. We can import pyplot from Matplot </p><h4>Seaborn</h4><p>Seaborn is an open-source Python library built based on Matplotlib and integrates with Pandas. It is used for making presentable and informative statistical graphics which makes it ideal for business and marketing analysis. This library helps you learn and explore about data.</p><p><b>Installation and Execution</b></p><p>We can use the following line of script to install Seaborn using pip. We can import Seaborn to our Python script</p><h4>OpenCV</h4><p>Open Source Computer Vision Library, in short OpenCV is an python library for computer vision and image processing tasks.This library is used to identify an image pattern and various features from the data, and can also be integrated with NumPy to process the openCV array structure.</p><h4>NLTK</h4><p>Natural Language ToolKit, in short NLTK is a python programming environment usually used for developing natural language processing tasks. It comprises easy-to-use interfaces like WordNet, test processing libraries for classification, tokenization, parsing and semantic reasoning.</p><h4>spaCy</h4><p>spaCy is a free open source Python Library. It provides features for advanced tasks in Natural Language Processing in fast and better manner. Word tokenization and POS tagging are two tasks that the library performs effectively.</p><p><b>XGBoost, LightGBM, and Gensim</b> are many other tools and frameworks in Python used for Machine learning. Studying Python Libraries would help to understand the ecosystem of machine learning, and helps to built, train and deploy models.</p></ul><h2>Application of Machine Learning</h2><p>Nowadays; Machine Learning is used almost everywhere. However, some most commonly used applicable areas of Machine Learning are:</p><ul><li><b>Speech recognition:</b> It is also known as automatic speech recognition (ASR), computer speech recognition, or speech-to-text, and it is a capability that uses natural language processing (NLP) to translate human speech into a written format. To perform voice search, such as Siri, or improve text accessibility, a large number of Mobile Devices incorporate speech recognition into their systems.</li><li><b>Customer service:</b> Chatbots are replacing human operators on websites and social media, affecting client engagement. Chatbots answer shipping FAQs, offer personalized advice, cross-sell products, and recommend sizes. Some common examples are virtual agents on e-commerce sites, Slack and Facebook Messenger bots, and virtual and voice assistants</li><li><b>Computer vision:</b> This artificial intelligence technology allows computers to derive meaningful information from digital images, videos, and other visual inputs that can then be used for appropriate action. Computer vision, powered by convolutional neural networks, is used for photo tagging on social media, radiology imaging in healthcare, and self-driving cars in the automotive industry.</li><li><b>Recommendation engines:</b> AI algorithms may help to detect trends in data that might be useful for developing more efficient marketing strategies using past data patterns. Online retailers use recommendation engines to provide their customers with relevant product recommendations for the purchasing process.</li><li><b>Robotic process automation (RPA):</b> Also known as software robotics, RPA uses intelligent automation technologies to perform repetitive manual tasks.</li><li><b>Automated stock trading:</b> AI-driven high-frequency trading platforms are designed to optimize stock portfolios and make thousands or even millions of trades each day without human intervention.</li><li><b>Fraud detection:</b> Machine learning is capable of detecting suspected transactions for banks and others in the financial sector. A model can be trained by supervised learning, based on knowledge of recent fraudulent transactions. Anomaly detection may identify transactions that appear unusual, and need to be followed up.</li><h2>Hands-on Coding Exercises</h2><p><b>Hands-on Exercise: Data Preprocessing for Machine Learning</b></p><p><b>Objective:</b> Learn and apply essential steps in data preprocessing, including handling missing values, outlier detection, and feature scaling.</p><p>Click the 'Open in Colab' button to perform the exercise</p><h2>Conclusion</h2><p>Completing this guide gives you a foundational understanding of Machine Learning. To deepen your knowledge, continue exploring more topics.</p>",
+      "type": "narrative",
+      "content_id": 2,
+      "page": 1,
+      "order": 2,
+      "progress": 80,
+      "depends_on_finish_lab": false
+    },
+    {
+      "content": "<video controls src='http://54.242.135.26:8001/videos/ml101_intro.mp4'></video>",
+      "type": "video",
+      "content_id": 3,  
+      "page": 2,
+      "order": 3,
+      "progress": 100,
+      "depends_on_finish_lab": true
+    }
+  ],
+  "endpoints": [
+    {
+      "endpoint": "/",
+      "description": "Renders homepage",
+      "type": 0,
+      "method": "GET"
+    },
+    {
+      "endpoint": "/submit_quiz",
+      "description": "Fetch a specific quiz question by its number.",
+      "type": 1,
+      "method": "POST"
+    }
+  ],
+  "assets": [
+  {
+    "key": "quiz_title",
+    "value": "Machine Learning 101 Quiz",
+    "type": "str",
+    "api_endpoint": "/"
+  },
+  {
+    "key": "html_template",
+    "value": "ml101.html",
+    "type": "str",
+    "api_endpoint": "/"
+  },
+  {
+    "key": "quiz_submission_endpoint",
+    "value": "/submit_quiz",
+    "type": "str",
+    "api_endpoint": "/submit_quiz"
+  },
+  {
+    "key": "question_keys",
+    "value": "q1, q2, q3, q4, q5",
+    "type": "str",
+    "api_endpoint": "/submit_quiz"
+  },
+  {
+    "key": "answer_format",
+    "value": "List[str] via Form",
+    "type": "str",
+    "api_endpoint": "/submit_quiz"
+  },
+  {
+    "key": "evaluation_logic",
+    "value": "All selected answers must match correct options in content and count",
+    "type": "str",
+    "api_endpoint": "/submit_quiz"
+  },
+  {
+    "key": "success_response",
+    "value": "All answers are correct! 🎉",
+    "type": "str",
+    "api_endpoint": "/submit_quiz"
+  },
+  {
+    "key": "failure_response",
+    "value": "Some answers are incorrect. Try again! ❌",
+    "type": "str",
+    "api_endpoint": "/submit_quiz"
+  },
+  {
+      "key": "API_KEY",
+      "value":"place_api_key_here",
+      "type": "str",
+      "api_endpoint":""
+  }
+],
+  "content_endpoints": [
+    {
+      "content_order": 1,
+      "endpoint": "/"
+    },
+    {
+      "content_order": 2,
+      "endpoint": "/submit_quiz"
+    }
+  ],
+  "endpoint_user_inputs": [
+  {
+    "endpoint": "/submit_quiz",
+    "field_name": "q1",
+    "field_type": "List[str]"
+  },
+  {
+    "endpoint": "/submit_quiz",
+    "field_name": "q2",
+    "field_type": "List[str]"
+  },
+  {
+    "endpoint": "/submit_quiz",
+    "field_name": "q3",
+    "field_type": "List[str]"
+  },
+  {
+    "endpoint": "/submit_quiz",
+    "field_name": "q4",
+    "field_type": "List[str]"
+  },
+  {
+    "endpoint": "/submit_quiz",
+    "field_name": "q5",
+    "field_type": "List[str]"
+  }
+],
+  "quiz": {
+    "title": "ML 101 Learning Quiz",
+    "description": "Check Your Understanding",
+    "pass_percentage": 80,
+    "questions": [
+      {
+        "question_id": 1,
+        "text": "Which of the following are common types of Machine Learning? (Select all that apply)",
+        "is_multiple_choice": true,
+        "points": 2,
+        "choices": [
+          {"choice_id": 1, "text": "Supervised Learning", "is_correct": true},
+          {"choice_id": 2, "text": "Unsupervised Learning", "is_correct": true},
+          {"choice_id": 3, "text": "Semi-Supervised Learning", "is_correct": true},
+          {"choice_id": 4, "text": "Reinforcement Learning", "is_correct": true},
+          {"choice_id": 5, "text": "Structured Learning", "is_correct": false}
+        ]
+      },
+      {
+        "question_id": 2,
+        "text": "What are key stages in a Machine Learning pipeline? (Select all that apply)",
+        "is_multiple_choice": true,
+        "points": 2,
+        "choices": [
+          {"choice_id": 6, "text": "Data Collection", "is_correct": true},
+          {"choice_id": 7, "text": "Data Preprocessing", "is_correct": true},
+          {"choice_id": 8, "text": "Model Selection", "is_correct": true},
+          {"choice_id": 9, "text": "Model Training", "is_correct": true},
+          {"choice_id": 10, "text": "Random Sampling", "is_correct": false}
+        ]
+      },
+      {
+        "question_id": 3,
+        "text": "Which algorithms are commonly used in Supervised Learning? (Select all that apply)",
+        "is_multiple_choice": true,
+        "points": 2,
+        "choices": [
+          {"choice_id": 11, "text": "Linear Regression", "is_correct": true},
+          {"choice_id": 12, "text": "Decision Trees", "is_correct": true},
+          {"choice_id": 13, "text": "K-Means Clustering", "is_correct": false},
+          {"choice_id": 14, "text": "Random Forest", "is_correct": true},
+          {"choice_id": 15, "text": "Naive Bayes", "is_correct": true}
+        ]
+      },
+      {
+        "question_id": 4,
+        "text": "Which of these are applications of Machine Learning? (Select all that apply)",
+        "is_multiple_choice": true,
+        "points": 2,
+        "choices": [
+          {"choice_id": 16, "text": "Spam Detection", "is_correct": true},
+          {"choice_id": 17, "text": "Image Recognition", "is_correct": true},
+          {"choice_id": 18, "text": "Stock Market Prediction", "is_correct": true},
+          {"choice_id": 19, "text": "Weather Forecasting", "is_correct": true},
+          {"choice_id": 20, "text": "Coin Tossing", "is_correct": false}
+        ]
+      },
+      {
+        "question_id": 5,
+        "text": "What are the key challenges in machine learning? (Select all that apply)",
+        "is_multiple_choice": true,
+        "points": 2,
+        "choices": [
+          {"choice_id": 21, "text": "Overfitting", "is_correct": true},
+          {"choice_id": 22, "text": "Underfitting", "is_correct": true},
+          {"choice_id": 23, "text": "Data Quality", "is_correct": true},
+          {"choice_id": 24, "text": "Model Explainability", "is_correct": true},
+          {"choice_id": 25, "text": "Randomness", "is_correct": false}
+        ]
+      }
+    ]
+  }
+}
